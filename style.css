@@ -28,6 +28,7 @@
   color: #727272;
   font-size: 1rem;
   font-weight: 400;
+  padding: 2rem 0;
 }
 .title {
   color: #131313;
@@ -118,6 +119,9 @@ main {
 }
 
 /* facts section here  */
+.facts {
+  padding: 20px;
+}
 .facts-card-container {
   display: flex;
   /* width: 100%; */
@@ -162,6 +166,11 @@ main {
   }
   .team-img-container {
     grid-template-columns: 1fr;
+  }
+  .facts-card-container {
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
   }
 }
 
