@@ -146,6 +146,23 @@ main {
   font-weight: 600;
   margin-top: 5px;
 }
+/* sponsor section  */
+.sponsors {
+  text-align: center;
+  /* width: 100%; */
+  margin-top: 50px;
+}
+.sponsor-logos {
+  /* display: grid; */
+  /* grid-template-columns: repeat(5, 1fr); */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* flex-wrap: wrap;
+  /* padding: 0 50px; */
+  gap: 40px;
+  /* padding: 0 20px; */
+}
 
 /* responsive styles  */
 /* MOBILE DEVICES  */
@@ -154,7 +171,8 @@ main {
     padding: 20px;
   }
   nav,
-  .team {
+  .team,
+  .sponsor-logos {
     flex-direction: column;
   }
   .nav-title {
@@ -180,7 +198,13 @@ main {
     padding: 60px;
   }
   nav,
-  .team {
+  .team,
+  .sponsor-logos {
     flex-direction: column;
+  }
+  .facts-card-container {
+    /* flex-direction: column; */
+    padding: 50px;
+    gap: 20px;
   }
 }
