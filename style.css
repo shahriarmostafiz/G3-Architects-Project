@@ -24,6 +24,11 @@
   font-size: 2.8rem;
   font-weight: 700;
 }
+.common-text {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+}
 /* header section styles  */
 header {
   background: rgba(255, 144, 14, 0.1);
@@ -70,9 +75,6 @@ nav a {
   font-weight: 700;
 }
 .banner-text {
-  color: #727272;
-  font-size: 1rem;
-  font-weight: 400;
   padding: 2rem 0;
 }
 .banner-img {
@@ -86,7 +88,7 @@ nav a {
 /* main secion styles  */
 main {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 85px auto;
 }
 /* team section here  */
 .team {
@@ -122,11 +124,19 @@ main {
   header {
     padding: 20px;
   }
-  nav {
+  nav,
+  .team {
     flex-direction: column;
   }
   .nav-title {
     padding-bottom: 20px;
+  }
+
+  .team {
+    padding: 20px;
+  }
+  .team-img-container {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -135,7 +145,8 @@ main {
   header {
     padding: 60px;
   }
-  nav {
+  nav,
+  .team {
     flex-direction: column;
   }
 }
