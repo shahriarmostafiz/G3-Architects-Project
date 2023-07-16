@@ -8,11 +8,11 @@
   border-radius: 8px;
   background: #ff900e;
   color: white;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1.25rem;
   font-weight: 600;
-  padding: 20px 24px;
+  padding: 20px 25px;
   border: 0;
+  cursor: pointer;
 }
 
 /* header section styles  */
@@ -36,6 +36,7 @@ nav ul {
   display: flex;
   /* flex-grow: 4; */
   /* justify-content: space-around; */
+  /* border: 1px solid; */
 }
 nav li {
   list-style: none;
@@ -71,4 +72,27 @@ nav a {
 .banner-img > img {
   width: 100%;
   padding-top: 50px;
+}
+/* responsive styles  */
+/* MOBILE DEVICES  */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .nav-title {
+    padding-bottom: 20px;
+  }
+}
+
+/* TABLET /MEDIUM DEVICES  */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+  header {
+    padding: 60px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
